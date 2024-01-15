@@ -1,4 +1,10 @@
 ---
+
+import Header from "../components/Header.astro"
+import '@fontsource-variable/inter';
+import '@fontsource/geist-sans';
+import Footer from "../components/Footer.astro";
+
 interface Props {
 	title: string;
 }
@@ -7,7 +13,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -17,35 +23,57 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+
+		<Header />
+			<slot />
+		<Footer />
+
 	</body>
 </html>
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+		
 	}
+
+	h1, h2, h3, h4{
+		text-wrap: balance;
+	}
+
+	p{
+		text-wrap: pretty;
+	}
+
+	html.dark {
+  		background-color: #252932;
+		color: #EFEFEF;
+	}
+
+	.dark header {
+		background-color: #3d4459;
+	}
+
+
+	.dark a {
+  		color: #EFEFEF;
+	}
+	
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+		font-family: 'Inter Variable', sans-serif;
+		--font-family: 'Geist Sans', sans-serif;
+		background: #fafafa;
+		color:hsla(0, 0%, 0%, 1);
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+
+
+	body{
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		--background-color: #E5E5E5;
 	}
+
+	a:hover {
+        text-decoration: underline;
+    }
+
 </style>

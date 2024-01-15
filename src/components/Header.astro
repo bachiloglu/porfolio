@@ -1,0 +1,35 @@
+---
+import ThemeIcon from './ThemeIcon.astro';
+---
+<header transition:persist
+    class="
+        flex justify-between items-center mx-auto
+        w-full px-10
+        sticky top-0
+        bg-white mb-3 pt-4 pb-4">
+    <div>
+        <span class="text-md font-regular"><a href="src/pages/index.astro">Fernando Catalán Bachiloglu</a></span>
+    </div>
+    <nav class="flex flex-row gap-x-10 font-light">
+        <a href="mailto:fernandoicatalan@gmail.com">Email ↗</a>
+        <a href="https://www.linkedin.com/in/fernando-catal%C3%A1n-bachiloglu-7b6631150/">LinkedIn ↗</a>
+        <a href="">CV ↗</a>
+        <ThemeIcon />
+    </nav>
+</header>
+<style>
+    header {
+        box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+        background-color: #fafafa;
+    }
+    nav a{
+        color: #666666;
+        font-size: 14px;
+    }
+
+    nav a:hover{
+        color:hsla(0, 0%, 0%, 1);
+        transition: color 2ms ease;
+    }
+
+</style>

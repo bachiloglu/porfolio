@@ -1,0 +1,18 @@
+---
+const { frontmatter } = Astro.props;
+import Layout from "./Layout.astro"
+import Header from "../components/Header.astro"
+import Section from "../components/Section.astro"
+import Grids from "../components/Grids.astro"
+import Projects from "../components/Projects.astro"
+import Card from "../components/Card.astro";
+import Footer from "../components/Footer.astro";
+const allPosts = await Astro.glob('../pages/projects/*.md');
+---
+
+<Layout page.Title={frontmatter.title}> 
+    <Section>
+        <p>Escrito por {frontmatter.author}</p>
+        <slot />
+    </Section>
+</Layout>

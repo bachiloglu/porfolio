@@ -1,0 +1,32 @@
+---
+import BaseBlog from '../layouts/BaseBlog.astro';
+const { TituloProyecto, Fecha, Portada, Link } = Astro.props;
+---
+<a href={Link}>
+    <div
+        class="flex flex-col mx-auto
+        p-2 w-full rounded-md
+        m-2">   
+        <img class="size-full h-96 object-cover mb-4 rounded-md"
+            src={Portada}
+            alt="Foto de portada del proyecto"
+        />
+        <div>
+            <div class="flex flex-row gap-0 font-light text-sm">
+                <span>{Fecha}</span>
+            </div>
+            <h2 class="mb-4 text-md">{TituloProyecto}</h2>
+        </div>
+    </div>
+</a>
+
+<style>
+
+    h2{
+        color: hsl(0,0%,9)
+    }
+    span{
+        color: #666666;
+    }
+    
+</style>
