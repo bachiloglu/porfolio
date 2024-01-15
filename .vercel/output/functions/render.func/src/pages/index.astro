@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro"
+import CardLayout from "../layouts/CardLayout.astro"
+import Header from "../components/Header.astro"
+import Section from "../components/Section.astro"
+import Grids from "../components/Grids.astro"
+import Projects from "../components/Projects.astro"
+import Card from "../components/Card.astro"
+const allPosts = await Astro.glob('../pages/projects/*.md');
+---
+
+<Layout title="Fernando Catalán Bachiloglu - Diseñador Digital">
+	<main>
+		<Section class="mt-10 mb-32">
+			<Grids>
+				{allPosts.map((post) => 
+					<CardLayout 
+					Link = {post.url}
+					TituloProyecto = {post.frontmatter.title} 
+					Fecha = {post.frontmatter.year} 
+					Portada = {post.frontmatter.image.url}>
+					</CardLayout>)}
+			</Grids>
+		</Section>
+	</main>
+</Layout>
