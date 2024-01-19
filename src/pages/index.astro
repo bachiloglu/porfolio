@@ -18,7 +18,7 @@ const allPosts = await Astro.glob('../pages/projects/*.md');
 					Link = {post.url}
 					TituloProyecto = {post.frontmatter.title} 
 					Fecha = {post.frontmatter.year} 
-					Portada = {post.frontmatter.image.url}>
+					Portada = {post.frontmatter.portada.url}>
 					</CardLayout>)}
 			</Grids>
 		</Section>

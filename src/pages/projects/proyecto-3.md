@@ -4,9 +4,24 @@ title: 'Mi tercera publicación en el blog'
 year: "2022"
 description: 'Este es la tercera publicación de mi nuevo blog Astro.'
 author: 'Alumno de Astro'
+portada: 
+    url: 'https://images.unsplash.com/photo-1605117012605-b68dedd4accc?q=80&w=3038&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    alt: 'Portada del proyecto'
 image:
-    url: 'https://images.unsplash.com/photo-1682687980918-3c2149a8f110?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-    alt: 'El logotipo completo de Astro.'
+    [
+        {
+            url: ../../public/img/projects/lexgo/lg_01.png,
+            alt: Imagen del proyecto
+        },
+        {
+            url: ../../public/img/projects/lexgo/lg_01.png,
+            alt: Imagen del proyecto
+        },
+        {
+            url: ../../public/projects/lexgo/lg_01.png,
+            alt: Imagen del proyecto
+        }
+        ]
 
 ---
 # Mi primera publicación en el blog
