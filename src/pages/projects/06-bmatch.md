@@ -5,24 +5,16 @@ year: "2023"
 description: 'Este es la tercera publicación de mi nuevo blog Astro.'
 author: 'Fernando Catalán Bachiloglu'
 portada: 
-    url: "/img/projects/family-business/fb-01.png"
+    url: "/img/projects/bmach/bm-01.png"
     alt: 'Portada del proyecto'
 image:
     [
         {
-            url: /img/projects/family-business/fb-01.png,
+            url: /img/projects/bmach/bm-01.png,
             alt: Imagen del proyecto
         },
         {
-            url: /img/projects/family-business/fb-02.png,
-            alt: Imagen del proyecto
-        },
-        {
-            url: /img/projects/family-business/fb-03.png,
-            alt: Imagen del proyecto
-        },
-        {
-            url: /img/projects/family-business/fb-04.png,
+            url: /img/projects/bmach/bm-02.png,
             alt: Imagen del proyecto
         }
         ]
