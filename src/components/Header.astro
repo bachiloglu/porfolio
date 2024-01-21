@@ -11,7 +11,7 @@ import ThemeIcon from './ThemeIcon.astro';
         <span class="text-md font-regular text-black">Fernando Catalán Bachiloglu</span>
     </div>
     <nav class="flex flex-row gap-x-10 font-light">
-        <a href="/">Proyectos ↗</a>
+        <a href="/">Proyectos</a>
         <a href="mailto:fernandoicatalan@gmail.com">Email ↗</a>
         <a href="https://www.linkedin.com/in/fernando-catal%C3%A1n-bachiloglu-7b6631150/">LinkedIn ↗</a>
         <a href="../../public/cv-catalan-fernando-ene2024.pdf" download>CV ↗</a>
@@ -24,7 +24,7 @@ import ThemeIcon from './ThemeIcon.astro';
         background-color: #fafafa;
     }
     nav a{
-        color: #666666;
+        color: hsla(0, 0%, 0%, 1);
         font-size: 14px;
     }
 
@@ -33,4 +33,30 @@ import ThemeIcon from './ThemeIcon.astro';
         transition: color 2ms ease;
     }
 
+    nav a.active-link{
+        color:rgba(0, 0, 0, 0.416);
+        transition: color 2ms ease;
+    }
 </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Obtén la URL actual
+        var currentUrl = window.location.pathname;
+    
+        // Obtén todos los enlaces dentro del menú
+        var navLinks = document.querySelectorAll('nav a');
+    
+        // Itera sobre los enlaces del menú
+        navLinks.forEach(function(link) {
+            // Obtén la URL del enlace
+            var linkUrl = link.getAttribute('href');
+    
+            // Compara la URL actual con la URL del enlace
+            if (currentUrl === linkUrl) {
+                // Agrega una clase al enlace activo (puedes personalizar el nombre de la clase)
+                link.classList.add('active-link');
+            }
+        });
+    });
+    </script>
