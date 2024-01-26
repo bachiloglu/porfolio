@@ -20,6 +20,4 @@ image:
         ]
 url-prod: '-'
 ---
-Diseño de aplicación móvil y aplicación web (vistas no rescatadas). Homologación de design system. Tapp, aplicación de tarjeta digital y finanzas personales.
-
-En producción.
+Experimento para definir flujos de una aplicación de categorizacón de gastos. Se crea a partir de la necesidad de entender cómo se están distribuyendo los gastos de las personas. Está en desarollo.

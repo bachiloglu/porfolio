@@ -27,4 +27,10 @@ image:
         ]
 url-prod: 'https://lexgo.cl'
 ---
-Diseño y desarrollo en Webflow de sitio web corporativo para Lexgo, plataforma para agilizar procesos legales.
+Lexgo ofrece una plataforma para llevar a cabo rápidamente procesos legales.
+\
+\
+Para este proyecto, se me solicitó la tarea de diseñar y desarrollar un sitio web corporativo utilizando Webflow (plataforma de desarrollo de sitios web low/no-code). El objetivo principal es destacar la simplicidad y la rapidez con las que se pueden llevar a cabo los procesos legales de los diferentes servicios que ofrecen para varios países de la región.
+\
+\
+El objetivo del sitio fue desplegar información legal compleja de manera sencilla y fácil de leer. Para ello se despliega la info en un layout simple, casi modular, que se repite en todas las páginas interiores.
