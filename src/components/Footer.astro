@@ -1,20 +1,26 @@
+---
+import { Pill } from "./Pill"
+---
 <section transition:persist>
     <div class="w-full h-px bg-slate-200"></div>
-    <footer class="w-full flex flex-row pb-10 mt-12 px-10 justify-between">
-        <div class="flex-col max-w-lg">
+    <footer class="w-full flex-col lg:flex-row gap-6 pb-10 mt-12 px-10 justify-between flex">
+        <div class="flex flex-col max-w-lg">
             <span class="">© 2024 –– Fernando Catalán Bachiloglu.</span>
-            <p class="mt-8">
+            <p class="mt-2">
                 Diseñador gráfico de profesión. Graduado de la Universidad de
                 Chile. Especializado en diseño UX/UI. Entusiasta autodidacta del
                 Front-End.
             </p>
         </div>
-        <div>
-            <p class="flex-col">
+        <div class="flex flex-col justify-between gap-4">
+            <p>
                 Este portafolio se está construyendo desde 0 utilizando <a
                     href="https://astro.build/">Astro</a
                 > y <a href="https://tailwindcss.com/">Tailwind.</a>
             </p>
+            <div>
+                <Pill isAvailable={true} />
+            </div>
         </div>
     </footer>
 </section>
